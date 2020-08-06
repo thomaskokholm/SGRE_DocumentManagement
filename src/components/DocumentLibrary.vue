@@ -4,14 +4,17 @@
       <div class="flex-grow-1">
         <DocumentLibrarySearchbar></DocumentLibrarySearchbar>
       </div>
-      <div class="bg-light border-top border-right border-bottom border-secondary p-2">List / Grid</div>
+      <div class="bg-light border-top border-right border-bottom border-secondary">
+        <button class="btn btn-light" v-on:click="setListView()">List</button>
+        <button class="btn btn-light" v-on:click="setCardView()">Card</button>
+      </div>
     </div>
     <div class="row">
-      <div class="col-sm-12 col-md-5 col-lg-4">
+      <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
         <DocumentLibraryFilters></DocumentLibraryFilters>
       </div>
-      <div class="col-sm-12 col-md-7 col-lg-8">
-        <DocumentLibraryList></DocumentLibraryList>
+      <div class="col-sm-12 col-md-7 col-lg-6 col-xl-9">
+        <DocumentLibraryList :cardView="isCardView"></DocumentLibraryList>
       </div>
     </div>
   </div>
@@ -27,6 +30,20 @@ export default {
     DocumentLibraryList,
     DocumentLibraryFilters,
     DocumentLibrarySearchbar
+  },
+  data() {
+    return {
+      isCardView: false
+    };
+  },
+
+  methods: {
+    setCardView() {
+      this.isCardView = true;
+    },
+    setListView() {
+      this.isCardView = false;
+    }
   }
 };
 </script>

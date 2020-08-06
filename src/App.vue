@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container mt-5">
+  <div id="app" class="container-fluid mt-5">
     <DocumentLibrary></DocumentLibrary>
   </div>
 </template>
@@ -15,5 +15,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.container-fluid {
+  max-width: 1440px;
+}
 </style>
