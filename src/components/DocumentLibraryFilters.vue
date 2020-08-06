@@ -1,0 +1,15 @@
+<template>
+  <div class="DocumentManagement DocumentLibraryFilters">
+    <div class="bg-white border border-secondary">Document Library Filters goes here</div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "DocumentLibraryFilters"
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
