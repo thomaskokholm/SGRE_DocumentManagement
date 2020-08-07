@@ -1,7 +1,7 @@
 <template>
   <div class="DocumentManagement DocumentLibraryList">
-    <DocumentLibraryCard v-if="cardView"></DocumentLibraryCard>
-    <DocumentLibraryTable v-else></DocumentLibraryTable>
+    <document-library-card v-if="cardView"></document-library-card>
+    <document-library-table v-else></document-library-table>
   </div>
 </template>
 

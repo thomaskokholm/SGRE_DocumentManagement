@@ -2,7 +2,7 @@
   <div class="DocumentManagement DocumentLibrary">
     <div class="d-flex mb-3">
       <div class="flex-grow-1">
-        <DocumentLibrarySearchbar></DocumentLibrarySearchbar>
+        <document-library-searchbar></document-library-searchbar>
       </div>
       <div class="bg-light border-top border-right border-bottom border-secondary">
         <button
@@ -19,10 +19,10 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
-        <DocumentLibraryFilters></DocumentLibraryFilters>
+        <document-library-filters></document-library-filters>
       </div>
       <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9">
-        <DocumentLibraryList :cardView="isCardView"></DocumentLibraryList>
+        <document-library-list :cardView="isCardView"></document-library-list>
       </div>
     </div>
   </div>
