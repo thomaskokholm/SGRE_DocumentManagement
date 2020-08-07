@@ -1,6 +1,5 @@
 <template>
   <div class="DocumentManagement DocumentLibraryList">
-    Document Library List goes here: {{cardView}}
     <DocumentLibraryCard v-if="cardView"></DocumentLibraryCard>
     <DocumentLibraryTable v-else></DocumentLibraryTable>
   </div>
