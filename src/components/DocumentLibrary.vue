@@ -5,8 +5,16 @@
         <DocumentLibrarySearchbar></DocumentLibrarySearchbar>
       </div>
       <div class="bg-light border-top border-right border-bottom border-secondary">
-        <button class="btn btn-light" v-on:click="setListView()">List</button>
-        <button class="btn btn-light" v-on:click="setCardView()">Card</button>
+        <button
+          class="btn"
+          v-on:click="setListView()"
+          :class="!isCardView ? 'btn-secondary' : 'btn-light'"
+        >List</button>
+        <button
+          class="btn"
+          v-on:click="setCardView()"
+          :class="isCardView ? 'btn-secondary' : 'btn-light'"
+        >Card</button>
       </div>
     </div>
     <div class="row">

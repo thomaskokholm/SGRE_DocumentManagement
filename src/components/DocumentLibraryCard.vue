@@ -1,7 +1,7 @@
 <template>
   <div class="DocumentManagement DocumentLibraryCard">
     <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" v-for="index in 5" :key="index">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3" v-for="index in 10" :key="index">
         <div class="card mb-4">
           <img class="card-img-top bg-light" src="https://source.unsplash.com/random/320x250">
           <div class="card-body">
